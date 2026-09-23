@@ -1,0 +1,17 @@
+workflows:
+  default-workflow:
+    name: Default Workflow
+    max_build_duration: 60
+    environment:
+      flutter: stable
+      xcode: latest
+    scripts:
+      - name: Get Flutter packages
+        script: flutter pub get
+      - name: Build Android APK
+        script: flutter build apk --release --android-skip-build-dependency-validation
+      - name: Build iOS IPA (Unsigned for testing)
+        script: flutter build ipa --no-codesign
+    artifacts:
+      - build/app/outputs/flutter-apk/*.apk
+      - build/ios/ipa/*.ipa
