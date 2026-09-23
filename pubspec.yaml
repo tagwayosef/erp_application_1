@@ -1,0 +1,53 @@
+
+name: erp_application_1
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  intl: ^0.19.0
+  dio: ^5.4.0
+  excel: ^4.0.6
+  pdf: ^3.10.7
+  printing: ^5.11.1
+  share_plus: ^10.0.0
+  path_provider: ^2.1.2
+  image_picker: ^1.0.7
+  cupertino_icons: ^1.0.8
+  open_file: ^3.3.2
+  mobile_scanner: ^5.1.1
+
+  # Isar
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+
+  # 🔒 نظام الترخيص وبصمة الجهاز
+  device_info_plus: ^10.1.2
+  shared_preferences: ^2.2.3
+  flutter_secure_storage: ^9.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  build_runner: ^2.4.13
+  isar_generator: ^3.1.0+1
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  image_path: "assets/icon.png"
+  android: true
+  ios: true
+
+flutter:
+  uses-material-design: true
+
